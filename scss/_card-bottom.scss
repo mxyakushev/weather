@@ -1,0 +1,52 @@
+.bottom-part {
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-part__temperature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 25px 0;
+
+    &:last-child{
+        margin: 0;
+    }
+}
+
+.bottom-part__image-wrapper {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 0;
+
+    img {
+        width: 70%;
+        min-width: 30px;
+        transition: transform .3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.bottom-part__day {
+    min-width: 50px;
+}
+
+.bottom-part__description {
+    min-width: 110px;
+    font-weight: 700;
+}
+
+.bottom-part__temperature {
+    min-width: 40px;
+}
+
+.bottom-part__max-temperature {
+    margin: 0 0 3px 0;
+}
