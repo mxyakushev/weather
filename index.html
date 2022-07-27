@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="wrapper">
+        <div class="search">
+            <input class="input" type="text">
+            <button class="clear" type="button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+            </svg></button>
+            <small class="selected"></small>
+            <div class="loader hide">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="error hide">
+            <p>ERROR 404</p>
+            <p>City not found</p>
+        </div>
+        <div class="card hide">
+            <section class="upper-part">
+                <div class="upper-part__temperature-wrapper">
+                    <div class="upper-part__temperature"></div>
+                    <div class="upper-part__feels-like"></div>
+                </div>
+                <div class="upper-part__description-wrapper">
+                    <div class="upper-part__description"></div>
+                    <div class="upper-part__city"></div>
+                </div>
+                <div class="upper-part__image-wrapper">
+                    <img class="upper-part__image" src="" alt="weather">
+                </div>
+            </section>
+            <section class="bottom-part">
+                <div class="bottom-part__temperature-item">
+                    <div class="bottom-part__day"></div>
+                    <div class="bottom-part__image-wrapper">
+                        <img class="bottom-part__image" src="/img/thunderstorm.png" alt="weather">
+                    </div>
+                    <div class="bottom-part__description">broken clouds</div>
+                    <div class="bottom-part__temperature">
+                        <div class="bottom-part__max-temperature">-3°C</div>
+                        <div class="bottom-part__min-temperature">-8°C</div>
+                    </div>
+                </div>
+                <div class="bottom-part__temperature-item">
+                    <div class="bottom-part__day"></div>
+                    <div class="bottom-part__image-wrapper">
+                        <img class="bottom-part__image" src="/img/clear.png" alt="weather">
+                    </div>
+                    <div class="bottom-part__description">light rain</div>
+                    <div class="bottom-part__temperature">
+                        <div class="bottom-part__max-temperature">3°C</div>
+                        <div class="bottom-part__min-temperature">-2°C</div>
+                    </div>
+                </div>
+                <div class="bottom-part__temperature-item">
+                    <div class="bottom-part__day"></div>
+                    <div class="bottom-part__image-wrapper">
+                        <img class="bottom-part__image" src="/img/clouds.png" alt="weather">
+                    </div>
+                    <div class="bottom-part__description">light rain</div>
+                    <div class="bottom-part__temperature">
+                        <div class="bottom-part__max-temperature">6°C</div>
+                        <div class="bottom-part__min-temperature">2°C</div>
+                    </div>
+                </div>
+                <div class="bottom-part__temperature-item">
+                    <div class="bottom-part__day"></div>
+                    <div class="bottom-part__image-wrapper">
+                        <img class="bottom-part__image" src="/img/snow.png" alt="weather">
+                    </div>
+                    <div class="bottom-part__description">light rain</div>
+                    <div class="bottom-part__temperature">
+                        <div class="bottom-part__max-temperature">3°C</div>
+                        <div class="bottom-part__min-temperature">-1°C</div>
+                    </div>
+                </div>
+                <div class="bottom-part__temperature-item mon">
+                    <div class="bottom-part__day"></div>
+                    <div class="bottom-part__image-wrapper">
+                        <img class="bottom-part__image" src="/img/drizzle.png" alt="weather">
+                    </div>
+                    <div class="bottom-part__description">light rain</div>
+                    <div class="bottom-part__temperature">
+                        <div class="bottom-part__max-temperature">6°C</div>
+                        <div class="bottom-part__min-temperature">4°C</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
